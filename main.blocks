@@ -1,13 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="gwrFp!d_?d0c#Hg~Ee3H" x="110" y="106"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="pc_utp2eL.%^TVta8.6y"><field name="LEDS">`
-        # . . . . 
-        # . . . . 
-        # . . . . 
-        # . . . . 
-        # . . . .
-        `</field><next><block type="device_clear_display" id="o9(?j=,eNjKXjBuC@r)C"></block></next></block></statement></block><block type="device_button_event" id="_S^^,~%.(TP|:3!Nj,mL" x="497" y="149"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id=":$)cZa0yG2LaCr9pBKa+"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="Sl9_n9K2.}|14}N1*;:h" x="302" y="-90"><statement name="HANDLER"><block type="controls_if" id="NVM+$C=IX^=$hEPt`y)x"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="7QHd/,F+|Gu@Y?3Uy}pr" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="zmJywsDiG5@4:sd|1d`a"><field name="NAME">Button.B</field></block></value><statement name="DO0"><block type="device_show_leds" id=":$)cZa0yG2LaCr9pBKa+"><field name="LEDS">`
         . . . . # 
         . . . . # 
         . . . . # 
         . . . . # 
         . . . . #
-        `</field><next><block type="device_clear_display" id="}B{/knV+/j~k8v;k~lhw"></block></next></block></statement></block></xml>
+        `</field></block></statement><statement name="ELSE"><block type="device_clear_display" id="+9B;(.N(Pt#HxO[+;l`+"><next><block type="controls_if" id="SR7[.3lAsWni;yBo/pX~"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="2QI]{h?q+TV-_v-tOY)=" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="=xzAtTD)TAQ;;n~9a_Y="><field name="NAME">Button.A</field></block></value><statement name="DO0"><block type="device_show_leds" id="pc_utp2eL.%^TVta8.6y"><field name="LEDS">`
+        # . . . . 
+        # . . . . 
+        # . . . . 
+        # . . . . 
+        # . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_clear_display" id="^sUkeY2uKQ,_p|?y-cZ|"></block></statement></block></next></block></statement></block></statement></block></xml>

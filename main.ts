@@ -1,20 +1,24 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        # . . . .
-        # . . . .
-        # . . . .
-        # . . . .
-        # . . . .
-        `)
-    basic.clearScreen()
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . . . #
-        . . . . #
-        . . . . #
-        . . . . #
-        . . . . #
-        `)
-    basic.clearScreen()
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+        basic.showLeds(`
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            `)
+    } else {
+        basic.clearScreen()
+        if (input.buttonIsPressed(Button.A)) {
+            basic.showLeds(`
+                # . . . .
+                # . . . .
+                # . . . .
+                # . . . .
+                # . . . .
+                `)
+        } else {
+            basic.clearScreen()
+        }
+    }
 })
